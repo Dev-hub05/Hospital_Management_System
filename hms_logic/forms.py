@@ -74,6 +74,13 @@ class PatientForm(forms.ModelForm):
 class AppointmentForm(forms.ModelForm):
     """Form for creating and editing Appointment records."""
 
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+        # For new appointments, status is not editable/required and should default to 'Pending'
+        if not self.instance or not self.instance.pk:
+            if 'status' in self.fields:
+                self.fields.pop('status')
+
     class Meta:
         model = Appointment
         fields = ['doctor', 'patient', 'date', 'time', 'status', 'notes']

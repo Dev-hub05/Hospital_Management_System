@@ -95,9 +95,14 @@ python manage.py createsuperuser
 
 ### 6. Run the Server
 ```bash
-python manage.py run_server
+python manage.py runserver
 ```
 Visit `http://127.0.0.1:8000/` to view the landing page or `/dashboard/` for the admin portal.
+
+### 🔑 To Login
+You can access the system dashboard and the Django admin portal using the pre-configured administrator account:
+*   **Username**: `admin`
+*   **Password**: `adminpassword`
 
 ---
 
