@@ -126,4 +126,4 @@ Distributed under the MIT License. See `LICENSE` for more information.
 **Project Link**: [https://github.com/Dev-hub05/HospitalManagementSystem](https://github.com/Dev-hub05/HospitalManagementSystem)
 
 ---
-*Created with ❤️ by the Antigravity AI Team*
+<!-- *Created with ❤️ by the Antigravity AI Team* -->
